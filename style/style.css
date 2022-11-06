@@ -1,0 +1,284 @@
+@import url(./fonts.css);
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+
+
+/* .header-top */
+.header-top {
+  max-height: 80px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.menu-burger {
+  display: flex;
+  align-items: center;
+}
+
+.menu-burger__link {
+  margin: 24px 16px 24px 16px;
+}
+
+.header__logo-link {
+  margin-right: 25px;
+}
+
+.icon {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-contact {
+  display: none;
+}
+
+.icon-tool {
+  position: relative;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-tool__text {
+  white-space: nowrap;
+}
+
+/* .header-top */
+/* header-nav */
+.icon-tool-for-full-srceen {
+  display: none;
+}
+
+.header-nav__title {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 32px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.header-nav__wrapper h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 40px;
+  width: 4px;
+  background-color: #41F6D7;
+  top: -5px;
+  left: 0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.nav__items {
+  margin-left: 15px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  font-weight: 500;
+  white-space: nowrap;
+  color: #7E7E82;
+  display: block;
+  padding: 8px 21px 8px 21px;
+}
+
+.nav__link {
+  border: 2px solid transparent;
+}
+
+.nav__link_active {
+  border: 2px solid #B8FFEC;
+  background-color: white;
+}
+
+.nav__item a:hover {
+  border: 2px solid #B8FFEC;
+  background-color: white;
+  transition: 0.5s;
+}
+
+/* header-nav */
+/* info */
+.info__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #1B1C21;
+  padding-left: 16px;
+}
+
+.info__text-part1 {
+  margin-bottom: 16px;
+}
+
+.info__btn {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
+/* info */
+/* MEDIA */
+/* Мобильный экран */
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  
+
+  .icon {
+    width: 115px;
+  }
+
+  .icon-tool__btn1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    top: 5px;
+    left: -6px;
+  }
+
+  .nav__items {
+    flex-wrap: nowrap;
+  }
+
+  .nav {
+    overflow-x: scroll;
+  }
+
+  .info__text {
+    max-width: 288px;
+    max-height: 90px;
+    overflow: hidden;
+  }
+}
+
+/* Планшетный экран */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .icon {
+    width: 291px;
+  }
+
+  .icon-tool__btn1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    top: 5px;
+    left: -6px;
+  }
+
+  .icon-contact {
+    display: flex;
+  }
+
+  .nav {
+    overflow-x: scroll;
+  }
+
+  .nav__items {
+    flex-wrap: nowrap;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info__text {
+    max-width: 312px;
+    max-height: 160px;
+    overflow: hidden;
+  }
+
+  .info__img {
+    margin-right: 16px;
+  }
+
+  .info__img img {
+    border-radius: 5px;
+  }
+}
+
+/* Максимальный экран */
+@media screen and (min-width: 801px) {
+  
+
+  .header-top {
+    display: none;
+  }
+
+  .icon {
+    width: 408px;
+    margin-left: auto;
+  }
+
+  .wrapper-for-full-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+
+  .icon-tool-for-full-srceen {
+    display: block;
+  }
+
+  .icon-tool_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info__text {
+    max-width: 490px;
+    max-height: 160px;
+    overflow: hidden;
+  }
+
+  .info__img {
+    margin-right: 16px;
+  }
+
+  .info__img img {
+    border-radius: 5px;
+  }
+
+  .info__img {
+    margin-right: 28px;
+  }
+
+  .info__img img {
+    border-radius: 5px;
+  }
+}
