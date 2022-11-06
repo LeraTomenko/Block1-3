@@ -15,6 +15,7 @@ h1 {
 /* .header-top */
 .header-top {
   max-height: 80px;
+  max-width: 100%;
   background-color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -132,6 +133,7 @@ h1 {
 }
 
 .info__btn {
+  color: #1B1C21;
   display: flex;
   align-items: center;
   font-size: 16px;
