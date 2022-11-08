@@ -1,6 +1,8 @@
 @import url(./fonts.css);
 
 body {
+  max-width: 1120px;
+  margin: 0 auto;
   background-color: #F8F8F8;
   font-family: 'TT Lakes';
   font-size: 16px;
@@ -46,6 +48,15 @@ h1 {
 .icon-contact {
   display: none;
 }
+.icon-contact__phone::before{
+content: url(/assets/images/call.svg);
+}
+.icon-contact__chat::before{
+  content: url(/assets/images/chat.svg);
+}
+.icon-contact__profile::before{
+  content: url(/assets/images/profile.svg);
+}
 
 .icon-tool {
   position: relative;
@@ -59,7 +70,16 @@ h1 {
   white-space: nowrap;
 }
 
+.icon-tool__application::before{
+content: url(/assets/images/repair.svg);
+}
+.icon-tool__status::before{
+content: url(/assets/images/checkstatus.svg);
+}
+
 /* .header-top */
+
+
 /* header-nav */
 .icon-tool-for-full-srceen {
   display: none;
@@ -142,18 +162,26 @@ h1 {
   padding-bottom: 16px;
   padding-left: 16px;
 }
+.info__btn::before{
+  content: url(/assets/images/expand.svg);
+  
+}
+.info__img{
+  width: 100%;
+  height: auto;
+}
 
 /* info */
 /* MEDIA */
 /* Мобильный экран */
-@media screen and (max-width: 500px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
   
 
   .icon {
     width: 115px;
   }
 
-  .icon-tool__btn1::before {
+  .icon-tool__application::after {
     content: "";
     display: block;
     position: absolute;
@@ -180,12 +208,12 @@ h1 {
 }
 
 /* Планшетный экран */
-@media screen and (min-width: 501px) and (max-width: 800px) {
+@media screen and (min-width: 501px) and (max-width: 1120px) {
   .icon {
     width: 291px;
   }
 
-  .icon-tool__btn1::before {
+  .icon-tool__application::after {
     content: "";
     display: block;
     position: absolute;
@@ -219,11 +247,11 @@ h1 {
     overflow: hidden;
   }
 
-  .info__img {
+  .info__img-conteiner{
     margin-right: 16px;
   }
 
-  .info__img img {
+  .info__img{
     border-radius: 5px;
   }
 }
@@ -268,19 +296,13 @@ h1 {
     overflow: hidden;
   }
 
-  .info__img {
-    margin-right: 16px;
+  .info__img-conteiner {
+  margin-right: 28px;
   }
 
-  .info__img img {
+  .info__img  {
     border-radius: 5px;
   }
 
-  .info__img {
-    margin-right: 28px;
-  }
-
-  .info__img img {
-    border-radius: 5px;
-  }
+ 
 }
