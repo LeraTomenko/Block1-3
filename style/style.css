@@ -48,14 +48,24 @@ h1 {
 .icon-contact {
   display: none;
 }
-.icon-contact__phone::before{
-content: url(/assets/images/call.svg);
+.icon-contact__item{
+  margin-left: 15px;
 }
-.icon-contact__chat::before{
-  content: url(/assets/images/chat.svg);
+.icon-contact__phone{ 
+background: url(/assets/images/call.svg);
+width: 40px;
+height: 40px;
+
 }
-.icon-contact__profile::before{
-  content: url(/assets/images/profile.svg);
+.icon-contact__chat{  
+  background: url(/assets/images/chat.svg);   
+  width: 40px;
+  height: 40px;
+}
+.icon-contact__profile{   
+  background: url(/assets/images/profile.svg);   
+  width: 40px;
+  height: 40px;
 }
 
 .icon-tool {
@@ -65,16 +75,24 @@ content: url(/assets/images/call.svg);
   align-items: center;
   justify-content: space-between;
 }
+.icon-tool__item +.icon-tool__item{
+  margin-left: 15px;
+}
 
 .icon-tool__text {
   white-space: nowrap;
+  margin-right: 8px;
 }
 
-.icon-tool__application::before{
-content: url(/assets/images/repair.svg);
+.icon-tool__application{
+background: url(/assets/images/repair.svg);
+width: 40px;
+height: 40px;
 }
-.icon-tool__status::before{
-content: url(/assets/images/checkstatus.svg);
+.icon-tool__status{
+background: url(/assets/images/checkstatus.svg);
+width: 40px;
+height: 40px;
 }
 
 /* .header-top */
@@ -189,7 +207,7 @@ content: url(/assets/images/checkstatus.svg);
     width: 2px;
     background-color: #EAEAEA;
     top: 5px;
-    left: -6px;
+    left: -16px;
   }
 
   .nav__items {
@@ -198,7 +216,7 @@ content: url(/assets/images/checkstatus.svg);
 
   .nav {
     overflow-x: scroll;
-  }
+  }after
 
   .info__text {
     max-width: 288px;
@@ -213,20 +231,21 @@ content: url(/assets/images/checkstatus.svg);
     width: 291px;
   }
 
-  .icon-tool__application::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 32px;
-    width: 2px;
-    background-color: #EAEAEA;
-    top: 5px;
-    left: -6px;
-  }
+
 
   .icon-contact {
     display: flex;
   }
+    .icon-tool__application::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 32px;
+      width: 2px;
+      background-color: #EAEAEA;
+      top: 5px;
+      left: -16px;
+    }
 
   .nav {
     overflow-x: scroll;
@@ -257,7 +276,7 @@ content: url(/assets/images/checkstatus.svg);
 }
 
 /* Максимальный экран */
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1120px) {
   
 
   .header-top {
@@ -283,7 +302,9 @@ content: url(/assets/images/checkstatus.svg);
     display: flex;
     justify-content: space-between;
     margin-right: 30px;
+    align-items: center;
   }
+  
 
   .info {
     display: flex;
