@@ -1,61 +1,60 @@
 @import url(/style/fonts.css);
 
-* {
-   
-  
+body {
   font-family: 'TT Lakes';
   font-size: 16px;
 }
 
-a{
+a {
   color: #1B1C21
 }
 
-
-.menu-left{
- 
+/* TOP */
+.menu-left {
   width: 320px;
 }
-.menu-left__wrapper{
-background: #FFFFFF;
+
+.menu-left__wrapper {
+  background: #FFFFFF;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-   
-   
 }
 
-.menu-left-top{
+.menu-left-top {
   display: flex;
   align-items: center;
 }
-.menu-left__top{
-padding-top: 19px;
-margin-bottom: 50px;
 
-  
+.menu-left__top {
+  padding-top: 19px;
+  margin-bottom: 50px;
 }
 
-.menu-left-top__button{
-background: url(/assets/images/menuleft/burgerclose.svg);
-width: 40px;
-height: 40px;
-margin: 23px 16px 0 23px;
+.menu-left-top__button {
+  background: url(/assets/images/menuleft/burgerclose.svg);
+  width: 40px;
+  height: 40px;
+  margin: 23px 16px 0 23px;
 }
-.menu-left__logo{
+
+.menu-left__logo {
   margin: 19px 78px 0 0;
 }
 
-.menu-left__search-btn{
-background: url(/assets/images/menuleft//search.svg);
-width: 40px;
-height: 40px;
-margin-top: 23px;
-margin-right: 24px;
-
+.menu-left__search-btn {
+  background: url(/assets/images/menuleft//search.svg);
+  width: 40px;
+  height: 40px;
+  margin-top: 23px;
+  margin-right: 24px;
 }
-.menu-left__menu{
+
+/* TOP */
+/* MENU */
+.menu-left__menu {
   margin-bottom: 268px;
 }
-.menu-left__items{
+
+.menu-left__items {
   margin-left: 24px;
 }
 
@@ -63,15 +62,39 @@ margin-right: 24px;
   margin-bottom: 32px;
 }
 
-.menu-left__link{
-color: black;
-font-family: 'TT Lakes';
-font-size: 16px;
-line-height: 24px;
-font-weight: 500;
-
+.menu-left__link {
+  color: black;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
 }
-.menu-left__footer{
+
+.menu-left__link:hover {
+  transition: 0.5s;
+  color: #7E7E82;
+}
+
+.menu-left__link-selected {
+  color: #7E7E82;
+}
+
+.menu-left__link-selected::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 32px;
+  width: 4px;
+  background-color: #41F6D7;
+  top: 140px;
+  left: 0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* MENU */
+/* FOOTER */
+.menu-left__footer {
   margin-left: 24px;
   padding-bottom: 1px;
 }
@@ -80,7 +103,7 @@ font-weight: 500;
   margin-bottom: 16px;
 }
 
-.icon-contact-menu-left__item:not(:first-child){
+.icon-contact-menu-left__item:not(:first-child) {
   margin-left: 16px;
 }
 
@@ -88,7 +111,6 @@ font-weight: 500;
   background: url(/assets/images/call.svg);
   width: 40px;
   height: 40px;
-
 }
 
 .icon-contact-menu-left__chat {
@@ -103,19 +125,60 @@ font-weight: 500;
   height: 40px;
 }
 
-.menu-left__mail{
+.menu-left__mail {
   line-height: 24px;
   margin-bottom: 12px;
 }
-.menu-left__footer-number{
+
+.menu-left__footer-number {
   margin-bottom: 40px;
 }
-.menu-left__footer-number a{
+
+.menu-left__footer-number a {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
 }
 
-.menu-left__footer-lang{
+.menu-left__footer-lang {
   margin-bottom: 24px;
 }
+
+.menu-left__link-lang-selected {
+  color: #7E7E82;
+}
+
+.button-hover:hover {
+  filter: opacity(0.6);
+  transition: all 0.6s ease 0s;
+}
+
+.menu-left__footer-number a:hover {
+  color: #FF3E79;
+  transition: 0.6s;
+}
+
+.menu-left__mail a:hover {
+  color: #FF3E79;
+  transition: 0.6s;
+}
+
+/* FOOTER */
+/* MEDIA */
+/* Мобильный экран */
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .menu-left__menu {
+    margin-bottom: 32px;
+  }
+}
+
+/* Планшетный экран */
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+  .menu-left__menu {
+    margin-bottom: 32px;
+  }
+}
+
+/* Максимальный экран @media screen and (min-width: 1120px){
+}
+ */
