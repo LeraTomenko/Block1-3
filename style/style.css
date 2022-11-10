@@ -35,7 +35,7 @@ h1 {
 }
 
 .menu-burger__link {
-  background: url('/assets/images/burger.svg');
+  background: url('./assets/images/burger.svg');
   width: 40px;
   height: 40px;
   margin: 24px 16px 24px 16px;
@@ -59,18 +59,18 @@ h1 {
   margin-left: 15px;
 }
 .icon-contact__phone{ 
-background: url(/assets/images/call.svg);
+background: url('/assets/images/call.svg');
 width: 40px;
 height: 40px;
 
 }
 .icon-contact__chat{  
-  background: url(/assets/images/chat.svg);   
+  background: url('/assets/images/chat.svg');   
   width: 40px;
   height: 40px;
 }
 .icon-contact__profile{   
-  background: url(/assets/images/profile.svg);   
+  background: url('/assets/images/profile.svg');   
   width: 40px;
   height: 40px;
 }
@@ -92,12 +92,12 @@ height: 40px;
 }
 
 .icon-tool__application{
-background: url(/assets/images/repair.svg);
+background: url('/assets/images/repair.svg');
 width: 40px;
 height: 40px;
 }
 .icon-tool__status{
-background: url(/assets/images/checkstatus.svg);
+background: url('/assets/images/checkstatus.svg');
 width: 40px;
 height: 40px;
 }
@@ -196,7 +196,7 @@ height: 40px;
   padding-left: 16px;
 }
 .info__btn::before{
-  content: url(/assets/images/expand.svg);
+  content: url('/assets/images/expand.svg');
   
 }
 .info__img{
