@@ -106,6 +106,10 @@ height: 40px;
 
 
 /* header-nav */
+.nav::-webkit-scrollbar {
+  width: 0;
+}
+
 .icon-tool-for-full-srceen {
   display: none;
 }
@@ -222,7 +226,7 @@ height: 40px;
   }
 
   .nav {
-    overflow:hidden;
+    overflow-x: scroll;
   }
 
   .info__text {
@@ -233,7 +237,7 @@ height: 40px;
 }
 
 /* Планшетный экран */
-@media screen and (min-width: 501px) and (max-width: 1120px) {
+@media screen and (min-width: 768px) and (max-width: 1120px) {
   .icon {
     width: 291px;
   }
@@ -255,7 +259,7 @@ height: 40px;
     }
 
   .nav {
-    overflow:hidden;
+    overflow-x: scroll
   }
 
   .nav__items {
