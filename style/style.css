@@ -35,7 +35,7 @@ h1 {
 }
 
 .menu-burger__link {
-  background: url(/assets/images/burger.svg);
+  background: url('/assets/images/burger.svg');
   width: 40px;
   height: 40px;
   margin: 24px 16px 24px 16px;
