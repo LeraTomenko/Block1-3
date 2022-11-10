@@ -109,6 +109,10 @@ height: 40px;
 .nav::-webkit-scrollbar {
   width: 0;
 }
+.nav::-moz-scrollbar {
+  width: 0;
+}
+
 
 .icon-tool-for-full-srceen {
   display: none;
