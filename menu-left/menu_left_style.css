@@ -24,13 +24,13 @@ a {
   align-items: center;
 }
 
-.menu-left__top {
+.menu-left-top__container {
   padding-top: 19px;
   margin-bottom: 50px;
 }
 
 .menu-left-top__button {
-  background: url(/assets/images/menuleft/burgerclose.svg);
+  background: url("../assets/images/menuleft/burgerclose.svg");
   width: 40px;
   height: 40px;
   margin: 23px 16px 0 23px;
@@ -41,11 +41,12 @@ a {
 }
 
 .menu-left__search-btn {
-  background: url(/assets/images/menuleft//search.svg);
+  background: url("../assets/images/menuleft//search.svg");
   width: 40px;
   height: 40px;
   margin-top: 23px;
   margin-right: 24px;
+  
 }
 
 /* TOP */
@@ -108,19 +109,19 @@ a {
 }
 
 .icon-contact-menu-left__phone {
-  background: url(/assets/images/call.svg);
+  background: url("../assets/images/call.svg");
   width: 40px;
   height: 40px;
 }
 
 .icon-contact-menu-left__chat {
-  background: url(/assets/images/chat.svg);
+  background: url("../assets/images/chat.svg");
   width: 40px;
   height: 40px;
 }
 
 .icon-contact-menu-left__profile {
-  background: url(/assets/images/profile.svg);
+  background: url("../assets/images/profile.svg");
   width: 40px;
   height: 40px;
 }
@@ -150,7 +151,8 @@ a {
 
 .button-hover:hover {
   filter: opacity(0.6);
-  transition: all 0.6s ease 0s;
+  transition:  0.6s;
+  filter: drop-shadow(1px 2px 4px);
 }
 
 .menu-left__footer-number a:hover {
