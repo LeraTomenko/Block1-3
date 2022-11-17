@@ -2,9 +2,11 @@ const slider = document.querySelector('.swiper');
 let mySwiper;
 
 
-const btnForShow = document.querySelector('.btn-for-show');
-const btnForClose = document.querySelector('.btn-for-close');
+
+const button = document.querySelector('.slider-btn__button');
 const container = document.querySelector('.container-for-hiden');
+const icon = document.querySelector('.slider-btn__icon');
+const textButton = document.querySelector('.slider-btn__text');
 
 
 
@@ -56,13 +58,17 @@ window.addEventListener('resize',()=>{
   checkSlider()
 })
 
-btnForShow.addEventListener('click', () => {
-  container.classList.remove('hidden',  );
+button.addEventListener('click', () => {
+  container.classList.toggle('hidden');
+  button.classList.toggle('btn-for-close');
+  icon.classList.toggle('icon-rotate');  
+   textButton.innerHTML =
+    (textButton.innerHTML === 'Скрыть') ? textButton.innerHTML = 'Показать все' : textButton.innerHTML = 'Скрыть';
 });
 
-btnForClose.addEventListener('click', () => {
-  container.classList.add('hidden');
-});
+// button.addEventListener('click', () => {
+//   container.classList.add('hidden');
+// });
 
 
 
