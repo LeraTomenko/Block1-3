@@ -62,8 +62,12 @@ button.addEventListener('click', () => {
   container.classList.toggle('hidden');
   button.classList.toggle('btn-for-close');
   icon.classList.toggle('icon-rotate');  
-   textButton.textContent =
-    (textButton.textContent === 'Скрыть') ? textButton.textContent = 'Показать все' : textButton.textContent = 'Скрыть';
+   if (container.classList.contains('hidden')){
+    textButton.textContent = 'Показать все';
+   } else {
+         textButton.textContent = 'Скрыть';
+   }
+ 
 });
 
 
