@@ -62,13 +62,11 @@ button.addEventListener('click', () => {
   container.classList.toggle('hidden');
   button.classList.toggle('btn-for-close');
   icon.classList.toggle('icon-rotate');  
-   textButton.innerHTML =
-    (textButton.innerHTML === 'Скрыть') ? textButton.innerHTML = 'Показать все' : textButton.innerHTML = 'Скрыть';
+   textButton.textContent =
+    (textButton.textContent === 'Скрыть') ? textButton.textContent = 'Показать все' : textButton.textContent = 'Скрыть';
 });
 
-// button.addEventListener('click', () => {
-//   container.classList.add('hidden');
-// });
+
 
 
 
