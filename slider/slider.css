@@ -8,8 +8,8 @@
  }
 
  .slider__wrapper {
-   padding-left: 32px;
-   padding-right: 32px;
+   margin-left: 32px;
+   margin-right: 32px;
    margin-bottom: 24px;
  }
 
@@ -41,21 +41,23 @@
    align-items: center;
    border: 1px solid #EAEAEA;
    border-radius: 6px;
+   justify-content: space-between;
  }
 
  .slider__link {
    width: 100%;
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-around; */
    align-items: center;
    margin-left: 24px;
+   padding-right: 10px;
  }
 
  .slider__icon {
    background: url('../assets/images/slider/arrow.svg');
    width: 40px;
    height: 40px;
-   margin-right: 15px;
+   margin-left: auto;
  }
 
  .slider-btn {
@@ -83,6 +85,7 @@
 
  .container-for-hiden {
    max-height: 180px;
+  
  }
 
  .hidden {
@@ -100,8 +103,9 @@
 
    .slider__items {
      display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(220px, max-content));
+     grid-template-columns: repeat(3,220px);
      gap: 10px;
+    justify-content: space-around;
    }
 
    .slider__item {
@@ -121,9 +125,10 @@
  /* Максимальный экран */
  @media screen and (min-width: 1120px) {
    .slider__items {
-     display: grid;
-     grid-template-columns: repeat(4, 240px);
-     gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    justify-content: space-around;
+    gap: 10px;
    }
 
    .slider-btn {
